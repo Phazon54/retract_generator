@@ -1,0 +1,6 @@
+*.gcode
+*.gco
+
+*tmp/
+
+*__pycache__/
