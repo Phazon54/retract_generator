@@ -19,8 +19,6 @@ if platform.system() == "Linux":
 	icesl_bin = "/Home/IceSL/bin/IceSL-slicer"
 elif platform.system() == "Windows":	
 	icesl_bin = "C:/Program Files/INRIA/IceSL/bin/IceSL-slicer.exe"
-	#icesl_bin = "C:/Program Files/INRIA/IceSL/bin/IceSL-slicer-phasor.exe" # custom IceSL exec with phasor
-	#icesl_bin = "C:/Program Files/INRIA/IceSL/bin/dev/bin/IceSL-slicer.exe" # custom IceSL exec with phasor
 
 debug = False
 
