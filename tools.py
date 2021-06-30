@@ -14,7 +14,6 @@ elif platform.system() == "Windows":
 	clear = lambda: os.system('cls') or None
 	cleanPath = lambda path: str(path).replace("\\", "/")
 
-
 ##################################################
 
 def fileDialog():

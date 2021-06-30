@@ -2,6 +2,7 @@
 
 import os
 import sys
+import time
 import platform
 import pathlib
 import subprocess
@@ -221,12 +222,15 @@ def main(argv):
 		elif opt in ("-S", "--speed_max"):
 			speed_max = int(arg)
 
+	start_time = time.time()
 	prepare()
 	display_settings()
 	run_generator()
 	if not debug:
 		clean(False)
 	print("Done generating the Gcodes !")
+	end_time = time.time() - start_time
+	print(str(total_steps) + " Gcodes were generated in %.2f sec" % end_time)
 # main()
 
 ##################################################
